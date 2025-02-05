@@ -60,12 +60,12 @@ app.layout = [
     ),
     html.P(children="Hipoteza zerowa:"),
     html.P(
-        children="• Istnieje istotny statystycznie związek między gatunkiem gry a wysoką sprzedażą w danym regionie.",
+        children="• Nie stwierdzono istotnego statystycznie związku między gatunkiem gry a wysoką sprzedażą.",
         className="indent-text",
     ),
     html.P(children="Hipoteza alternatywna:"),
     html.P(
-        children="• Nie stwierdzono istotnego statystycznie związku między gatunkiem gry a wysoką sprzedażą.",
+        children="• Istnieje istotny statystycznie związek między gatunkiem gry a wysoką sprzedażą w danym regionie.",
         className="indent-text",
     ),
     html.P(children="Wyniki testu hipotez dla poszczególnych regionów:"),
@@ -79,7 +79,7 @@ app.layout = [
         ]
     ),
     html.P(
-        children="Dla każdego z regionów możemy przyjąć hipotezę zerową, która mówi, że Istnieje istotny statystycznie związek między gatunkiem gry a wysoką sprzedażą w danym regionie."
+        children="Dla każdego z regionów możemy odrzucić hipotezę zerową i przyjąć hipotezę alternatywną, która mówi, że Istnieje istotny statystycznie związek między gatunkiem gry a wysoką sprzedażą w danym regionie."
     ),
     html.H2(children="Zależność pomiędzy ocenami krytyków a sprzedażą gry"),
     dcc.Graph(figure=show_sales_critics(video_game_sales)),
@@ -156,12 +156,12 @@ app.layout = [
     ),
     html.P(children="Hipoteza zerowa:"),
     html.P(
-        children="• Istnieje istotny statystycznie związek między wydawcą gry a wysoką sprzedażą.",
+        children="• Nie stwierdzono istotnego statystycznie związku między wydawcą gry a wysoką sprzedażą.",
         className="indent-text",
     ),
     html.P(children="Hipoteza alternatywna:"),
     html.P(
-        children="• Nie stwierdzono istotnego statystycznie związku między wydawcą gry a wysoką sprzedażą.",
+        children="• Istnieje istotny statystycznie związek między wydawcą gry a wysoką sprzedażą.",
         className="indent-text",
     ),
     html.P(children="Wynik testu ANOVA:"),
